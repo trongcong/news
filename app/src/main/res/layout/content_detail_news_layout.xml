@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dev4u.ntc.generalnews.view.NewsDetailActivity"
+    tools:showIn="@layout/activity_news_detail">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerDetailNews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </android.support.v4.view.ViewPager>
+
+    <View
+        android:id="@+id/mView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/llBtLayout"
+        android:background="#acacac" />
+
+    <TableLayout
+        android:id="@+id/llBtLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:id="@+id/tableRowDetailNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="6">
+
+            <LinearLayout
+                android:id="@+id/llShareDetailNews"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="@dimen/layout_margin_medium"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:src="@drawable/ic_share_grey_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.2"
+                    android:text="Chia sẻ" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#acacac" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imgLikeDetailNews"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/layout_margin_medium"
+                android:src="@drawable/ic_unlike_grey" />
+
+            <ImageView
+                android:id="@+id/imgBookMarkDetailNews"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/layout_margin_medium"
+                android:src="@drawable/ic_unbookmark_grey" />
+
+            <ImageView
+                android:id="@+id/imgWriteCmtDetailNews"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/layout_margin_medium"
+                android:src="@drawable/ic_write_grey_24dp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvCountCmtDetailNews"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/layout_margin_small"
+                    android:background="@drawable/bg_circle"
+                    android:gravity="center"
+                    android:text="15" />
+
+                <ImageView
+                    android:id="@+id/imgShowCommentDetailNews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/layout_margin_medium"
+                    android:src="@drawable/ic_comment_grey_24dp" />
+            </RelativeLayout>
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

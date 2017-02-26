@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Báo Mới</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_next">Next Page</string>
+    <string name="menu_fav">Favirote</string>
+    <string name="menu_back">Previous Page</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="message_waiting">Please waiting...</string>
+    <string name="search_bar">Search</string>
+    <string name="dummy_name">Nguyễn Trọng Công</string>
+    <string name="dummy_time">12:30</string>
+    <string name="text_demo_chat_3">Thật ra em hết yêu anh từ lâu rồi nhưng sợ anh buồn nên giờ mới nói ra, thực sự nếu 2 đứa mình đến với nhau sẽ ko có tương lai đâu anh,
+            mình dừng lại đi anhnhé. Thực sự em cũng rất buồn nhưng ko còn cách nào khác. Hãy hiểu cho em.</string>
+
+</resources>

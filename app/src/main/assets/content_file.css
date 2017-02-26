@@ -1,0 +1,20 @@
+ @font-face {
+    font-family: MyFont;
+    src: url('file:///android_asset/fonts/TAHOMA.ttf');
+ }
+ body{
+     font-family: MyFont;
+}
+ img {
+     margin: 0.5% 0px !important;
+     border: 0;
+     font-size: 0;
+     line-height: 0;
+     max-width: 100%;
+}
+ p{
+     font-size:20px !important;
+}
+ h2 {
+     margin: 0px 0px 0.3em !important;
+}

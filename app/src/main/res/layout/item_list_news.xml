@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/layout_margin_small">
+
+    <!--<com.android.volley.toolbox.NetworkImageView-->
+    <!--android:id="@+id/imgThumbnail"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="90dp"-->
+    <!--android:scaleType="fitXY"-->
+    <!--app:srcCompat="@drawable/bg_no_img" />-->
+    <ImageView
+        android:id="@+id/imgThumbnail"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bg_no_img" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/layout_margin_smallest">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="Tiêu đề"
+            android:textColor="#302f2f"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvComment"
+            android:layout_alignBottom="@+id/tvComment"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="@dimen/text_margin_small"
+            android:layout_marginLeft="@dimen/text_margin_small"
+            android:paddingLeft="@dimen/text_margin_small"
+            android:paddingStart="@dimen/text_margin_small"
+            android:text="Category"
+            android:textSize="@dimen/text_size_smallest"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/imgComment"
+            android:layout_toStartOf="@+id/imgComment"
+            android:text="182"
+            android:textSize="@dimen/text_size_smallest" />
+
+        <ImageView
+            android:id="@+id/imgComment"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_comment" />
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvTime"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/tvComment"-->
+        <!--android:layout_alignBottom="@+id/tvComment"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginEnd="5dp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:text="2016/02/21 17:37:20"-->
+        <!--android:textSize="12dp"-->
+        <!--tools:ignore="RtlCompat" />-->
+
+        <!---->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imgTime"-->
+        <!--android:layout_width="20dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_toEndOf="@+id/tvTime"-->
+        <!--android:layout_toRightOf="@+id/tvTime"-->
+        <!--app:srcCompat="@drawable/ic_time" />-->
+
+
+    </RelativeLayout>
+</LinearLayout>

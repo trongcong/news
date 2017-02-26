@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp"
+    android:paddingTop="@dimen/_5sdp">
+
+    <com.dev4u.ntc.generalnews.widget.CircleImageView
+        android:id="@+id/mImgAvatar"
+        android:layout_width="@dimen/image_size_smallest"
+        android:layout_height="@dimen/image_size_smallest"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_author" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mTvName"
+        style="@style/OneMediumBold"
+        android:layout_marginLeft="@dimen/layout_margin_medium"
+        android:layout_marginStart="@dimen/layout_margin_medium"
+        android:layout_marginTop="@dimen/layout_margin_smallest"
+        android:layout_toEndOf="@+id/mImgAvatar"
+        android:layout_toRightOf="@+id/mImgAvatar"
+        android:text="@string/dummy_name" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mTvTime"
+        style="@style/OneSmallestNormal"
+        android:layout_below="@+id/mTvName"
+        android:layout_marginLeft="@dimen/layout_margin_medium"
+        android:layout_marginTop="@dimen/layout_margin_small"
+        android:layout_toEndOf="@+id/mImgAvatar"
+        android:layout_toRightOf="@+id/mImgAvatar"
+        android:text="@string/dummy_time"
+        android:textColor="@color/black" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mTvContentComment"
+        style="@style/ParagraphSmallNormalBlack"
+        android:layout_below="@+id/mTvTime"
+        android:layout_marginLeft="@dimen/layout_margin_medium"
+        android:layout_marginTop="@dimen/layout_margin_small"
+        android:layout_toEndOf="@+id/mImgAvatar"
+        android:layout_toRightOf="@+id/mImgAvatar"
+        android:text="@string/text_demo_chat_3" />
+
+    <View
+        android:id="@+id/mViewL"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/mTvContentComment"
+        android:layout_marginTop="5dp"
+        android:background="#d9d8d8" />
+</RelativeLayout>

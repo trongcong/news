@@ -1,0 +1,64 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    // Text size
+    <dimen name="text_size_smallest">@dimen/_11sdp</dimen>
+    <dimen name="text_size_small">@dimen/_13sdp</dimen>
+    <dimen name="text_size_medium">@dimen/_15sdp</dimen>
+    <dimen name="text_size_big">@dimen/_17sdp</dimen>
+    <dimen name="text_size_bigger">@dimen/_22sdp</dimen>
+    <dimen name="text_size_biggest">@dimen/_30sdp</dimen>
+
+    <dimen name="text_margin_small">@dimen/_4sdp</dimen>
+    <dimen name="text_margin">@dimen/_10sdp</dimen>
+
+    // Image size
+    <dimen name="image_size_smallest">@dimen/_54sdp</dimen>
+    <dimen name="image_size_small">@dimen/_72sdp</dimen>
+    <dimen name="image_size_medium">@dimen/_96sdp</dimen>
+    <dimen name="image_size_big">@dimen/_130sdp</dimen>
+    <dimen name="image_size_biggest">@dimen/_144sdp</dimen>
+    <dimen name="image_padding">1.5dp</dimen>
+
+    <dimen name="icon_size_big">@dimen/_20sdp</dimen>
+    <dimen name="icon_size_small">@dimen/_8sdp</dimen>
+    <dimen name="icon_size">@dimen/_15sdp</dimen>
+
+    // Margin
+    <dimen name="layout_margin_smallest">@dimen/_2sdp</dimen>
+    <dimen name="layout_margin_small">@dimen/_4sdp</dimen>
+    <dimen name="layout_margin_medium">@dimen/_8sdp</dimen>
+    <dimen name="layout_margin_big">@dimen/_12sdp</dimen>
+    <dimen name="layout_margin_bigger">@dimen/_18sdp</dimen>
+    <dimen name="layout_margin_biggest">@dimen/_24sdp</dimen>
+
+    // Common
+    <dimen name="header_height">@dimen/_68sdp</dimen>
+    <dimen name="titlebar_height">@dimen/_36sdp</dimen>
+    <dimen name="titlebar_icon_padding">@dimen/_6sdp</dimen>
+
+
+    <dimen name="button_size">@dimen/_32sdp</dimen>
+    <dimen name="button_height">@dimen/_30sdp</dimen>
+    <dimen name="layout_chat">@dimen/_42sdp</dimen>
+    <dimen name="button_width_small">@dimen/_50sdp</dimen>
+    <dimen name="button_height_small">@dimen/_30sdp</dimen>
+    <dimen name="button_double_height">@dimen/_38sdp</dimen>
+    <dimen name="button_width">@dimen/_130sdp</dimen>
+    <dimen name="button_width_medium">@dimen/_160sdp</dimen>
+
+    <dimen name="edit_text_height">@dimen/_32sdp</dimen>
+    <dimen name="edit_text_padding">@dimen/_12sdp</dimen>
+
+    <dimen name="loading_dialog_size">75dp</dimen>
+    <dimen name="item_offset">@dimen/_5sdp</dimen>
+    <dimen name="avatar_image_size">@dimen/_55sdp</dimen>
+    <dimen name="title_icon_size">@dimen/_20sdp</dimen>
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/popupWindowLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:text="Đăng nhập"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/_15sdp" />
+
+        <Button
+            android:id="@+id/btnLoginGg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/custom_button_login"
+            android:text="Đăng nhập qua Google"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/btnLoginFb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/custom_button_login"
+            android:text="Đăng nhập qua Facebook"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/popupWindowWriteComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:background="#f4f1f1"
+        android:padding="10dp">
+
+        <View
+            android:id="@+id/vClose"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:background="@android:drawable/ic_delete" />
+
+        <EditText
+            android:id="@+id/edComment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_below="@+id/vClose"
+            android:background="@drawable/custom_boder_comment"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Nhập bình luận..."
+            android:inputType="textMultiLine"
+            android:padding="@dimen/_5sdp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/vClose"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Bình luận"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSendComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="GỬI"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/popupWindowShowComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:background="#f4f1f1"
+        android:padding="10dp">
+
+        <View
+            android:id="@+id/vCloseL"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:drawable/ic_delete" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mTVSeeComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="Xem bình luận"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/mViewL"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/mTVSeeComment"
+            android:background="#d9d8d8" />
+
+        <ListView
+            android:id="@+id/mListViewComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mView"
+            android:layout_below="@+id/mViewL"></ListView>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mTVNoComment"
+            style="@style/OneMediumBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mView"
+            android:layout_below="@+id/mViewL"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="Chưa có bình luận nào..!!!"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/mView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/imgUser"
+            android:background="#f4f1f1" />
+
+        <com.dev4u.ntc.generalnews.widget.CircleImageView
+            android:id="@+id/imgUser"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingRight="@dimen/_2sdp"
+            android:src="@drawable/ic_author" />
+
+        <EditText
+            android:id="@+id/edShowComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mView"
+            android:layout_toEndOf="@+id/imgUser"
+            android:layout_toRightOf="@+id/imgUser"
+            android:background="@drawable/custom_boder_comment"
+            android:hint="Nhập bình luận"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/_5sdp" />
+
+    </RelativeLayout>
+</LinearLayout>
