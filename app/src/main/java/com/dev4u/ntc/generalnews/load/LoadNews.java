@@ -37,9 +37,6 @@ public class LoadNews {
     LoadNewsCallBack loadNewsCallBack;
     Context context;
 
-    public LoadNews(Context context) {
-        this.context = context;
-    }
 
     public LoadNews(LoadNewsCallBack newsCallBack) {
         this.loadNewsCallBack = newsCallBack;

@@ -1,6 +1,5 @@
 package com.dev4u.ntc.generalnews.view;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,10 +11,10 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -103,11 +102,9 @@ public class MainActivity extends AppCompatActivity
             View view = getLayoutInflater().inflate(R.layout.show_check_conection_form, null);
             Button btnThuLai = (Button) view.findViewById(R.id.btnThuLai);
 
-            final Dialog mBottomSheetDialog = new Dialog(MainActivity.this, R.style.MaterialDialogSheet);
-            mBottomSheetDialog.setContentView(view);
-            mBottomSheetDialog.setCancelable(false);
-            mBottomSheetDialog.getWindow().setGravity(Gravity.CENTER);
-            mBottomSheetDialog.show();
+            AlertDialog.Builder alert = new AlertDialog.Builder(this);
+            alert.setView(view);
+            alert.create().show();
             btnThuLai.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

@@ -28,6 +28,8 @@ public class Constant extends Application {
     public static final String TAG = Constant.class.getSimpleName();
     //this url is used to get recent 20 news
     public static final String LATEST_NEWS_URL = "http://dev.2dev4u.com/MICNews/api.php?latest_news=";
+    //this url is used to delete post like
+    public static final String DELETE_LIKE_POST_URL = "http://dev.2dev4u.com/MICNews/api.php?id_post=";
     //    public static final String LATEST_NEWS_URL = "http://10.0.2.2/MICNews/api.php?latest_news=";
     //this url gives news by category
     public static final String NEWS_BY_CATEGORY_URL = "http://dev.2dev4u.com/MICNews/api.php?news_by_id_ca=";

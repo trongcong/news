@@ -26,7 +26,7 @@
             android:layout_marginRight="@dimen/layout_margin_medium"
             android:layout_marginStart="@dimen/layout_margin_medium"
             android:layout_marginTop="@dimen/layout_margin_big"
-            android:src="@drawable/ic_avatar" />
+            android:src="@drawable/ic_author" />
 
         <TextView
             android:id="@+id/tvLogin"

@@ -77,8 +77,8 @@ public class NewsDetailViewPagerAdapter extends PagerAdapter {
         String text = "<html><head>"
                 + "<meta name=\"viewport\" content=\"width=device-width, user-scalable=no\" />"
                 + "<link rel=\"stylesheet\" type=\"text/css\" href=\"content_file.css\" /></head>"
-                + "<body><h2>" + arrPost.get(i).getTitle().toString() + "</h2></br><span style=\"color:red;\">"
-                + arrPost.get(i).getNameCategory().toString() + "</span> | <span style=\"color:red;\">"
+                + "<body><h2>" + arrPost.get(i).getTitle().toString() + "</h2></br><span style=\"color:#0aa485;\">"
+                + arrPost.get(i).getNameCategory().toString() + "</span> | <span style=\"color:#0aa485;\">"
                 + Constant.FormatDateTime(arrPost.get(i).getDatetime().toString()) + "</span></i></br> <p><h3>"
                 + arrPost.get(i).getDescription().toString() + "</h3></p>"
                 + htmlText + "</body></html>";
